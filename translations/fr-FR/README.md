@@ -28,17 +28,17 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 1. [Utiliser SVG pour des Icones](#utiliser-svg-pour-icons)
 1. [Utilisez le sélecteur "lobotomisé Owl"](#utilisez-le-sélecteur-lobotomisé-owl)
 1. [Utilisez `max-height` pour des Sliders pur CSS](#utilisez-max-height-pour-sliders-css-pur)
-1. [Celles de Tables de Même Largeur](#cellules-equal-largeur-de-table)
+1. [Cellules de Tables de Même Largeur](#cellules-equal-largeur-de-table)
 1. [Se débarrasser des Marges Avec Flexbox](#se-débarrasser-de-la-marge-hacks-avec-flexbox)
 1. [Utilisation des attributs sélecteurs avec des liens vides](#utilisation-des-attributs-sélecteurs-avec-des-liens-vides)
 1. [Style "par défaut" Liens](#style-par-défaut-liens)
 1. [Conformément Vertical Rhythm](#conformément-vertical-rhythm)
-1. [Boîtes Ratio Intrinsic](#boîtes-ratio-intrinsic)
-1. [Style des Images Cassées](#style-de-broken-images)
+1. [Radio Boxes Intrinsèques ](#boîtes-ratio-intrinsic)
+1. [Style des Images Brisées](#style-de-broken-images)
 1. [Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing](#utilisez-rem-for-global-dimensionnement-utilisez-em-pour-local-sizing)
 1. [Masquer les vidéos Autoplay qui ne sont pas Muted](#masquer-les-vidéos-autoplay-qui-ne-sont-pas-muted)
 1. [Utiliser `:root` pour Type flexible](#utiliser-root-de-type-flexible)
-1. [Réglez `font-size` sur des éléments de formulaire pour une expérience mobile mieux](#réglez-font-size-sur-le-formulaire-éléments-pour-une-expérience-mobile-mieux)
+1. [Réglez `font-size` sur des éléments de formulaire pour une meilleure expérience mobile ](#réglez-font-size-sur-le-formulaire-éléments-pour-une-expérience-mobile-mieux)
 
 
 ### Utilisez un Reset CSS
@@ -254,7 +254,7 @@ Pour en savoir plus sur la "chouette lobotomisé" sélecteur, lire [le poste de 
 
 ### Utilisez `max-height` pour Sliders CSS pur
 
-Mettre en œuvre des curseurs CSS uniquement en utilisant `max-height` avec trop-plein caché:
+Mettre en œuvre des curseurs CSS uniquement en utilisant `max-height` avec overflow caché:
 
 ```css
 .slider {
@@ -269,12 +269,12 @@ Mettre en œuvre des curseurs CSS uniquement en utilisant `max-height` avec trop
 }
 ```
 
-L'élément se dilate à la valeur `max-height` sur le vol stationnaire et le curseur se affiche à la suite du débordement.
+L'élément se dilate à la valeur `max-height` au survol et le curseur s'affiche à la suite de l'overflow.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Cellules Equal Largeur de table
+### Cellules de Tables de Même Largeur
 
 Les tableaux peuvent être une douleur à travailler avec donc essayer d'utiliser `table-layout: fixed` pour maintenir les cellules à largeur égale:
 
@@ -291,7 +291,7 @@ dispositions de table sans douleur.
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Se débarrasser de la marge Hacks Avec Flexbox
+### Se débarrasser des Marges Avec Flexbox
 
 Lorsque vous travaillez avec des gouttières de colonne, vous pouvez vous débarrasser de `nth`, `first-` et `last-child` en utilisant la propriété `space-between` flexBox:
 
@@ -340,14 +340,14 @@ a[href]:not([class]) {
 }
 ```
 
-Maintenant, les liens qui sont insérés via un CMS, qui ne disposent généralement pas un attribut `class`, auront une distinction sans affecter de manière générique la cascade.
+Maintenant, les liens qui sont insérés via un CMS, qui ne disposent généralement pas d'un attribut `class`, auront une distinction sans affecter de manière générique la cascade.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
 ### Conformément Vertical Rhythm
 
-Utilisez un sélecteur universel (de `*`) dans un élément pour créer un rythme vertical cohérente:
+Utilisez un sélecteur universel de (`*`) dans un élément pour créer un rythme vertical cohérant:
 
 ```css
 .intro > * {
@@ -355,12 +355,12 @@ Utilisez un sélecteur universel (de `*`) dans un élément pour créer un rythm
 }
 ```
 
-Rythme vertical conformément offre une esthétique visuelle qui rend le contenu beaucoup plus lisible.
+Un Rythme vertical solide offre une esthétique visuelle qui rend le contenu beaucoup plus lisible.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Boîtes Ratio Intrinsic
+### Radio Boxes Intrinsèques 
 
 Pour créer une boîte avec un rapport intrinsèque, tout ce que vous devez faire est d'appliquer en haut ou en bas de rembourrage à un div:
 
@@ -381,16 +381,16 @@ Pour créer une boîte avec un rapport intrinsèque, tout ce que vous devez fair
 }
 ```
 
-En utilisant 20% pour le rembourrage rend la hauteur de la caisse égale à 20% de sa largeur. Peu importe la largeur de la fenêtre, la div enfant gardera son ratio d'aspect (100% / 20% = 5: 1).
+En utilisant 20% de Padding, cela rend la hauteur de la caisse égale à 20% de sa largeur. Peu importe la largeur de la fenêtre, la div enfant gardera son ratio d'aspect (100% / 20% = 5: 1).
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Style de Broken Images
+### Style des Images Brisées 
 
-Faire des images brouillées esthétiquement plus agréables avec un peu de CSS:
+Rendre des images brisées plus agréables esthétiquement avec un peu de CSS:
 
 ```css
 img {  
@@ -426,7 +426,7 @@ En savoir plus sur le style de ce modèle dans [Ire Aderinokun](https://github.c
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing
+### Utilisez `rem` pour le Dimensionnement Global; Utilisez `em` pour le Dimenstionnelement Local
 
 Après avoir défini la taille de la police de base à la racine (`html { font-size: 100%; }`), définir la taille de la police pour les éléments textuels à `em`:
 
@@ -452,14 +452,14 @@ aside .module {
 }
 ```
 
-Maintenant, chaque module devient compartimentée et plus faciles à coiffer, plus maintenable, et flexible.
+Maintenant, chaque module devient compartimenté et plus facile à styliser, plus maintenable, et flexible.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
 ### Masquer les vidéos Autoplay qui ne sont pas Muted
 
-Ceci est un grand tour pour une feuille de style utilisateur personnalisé. Évitez de surcharger un utilisateur avec le son d'une vidéo lorsque la page lectures automatiques est chargé. Si le son est pas coupé, ne pas montrer la vidéo:
+Ceci est un grand tour pour les feuilles de style utilisateur personnalisées. Évitez de saturer un utilisateur avec le son d'une vidéo qui se lance automatiquement lorsque la page est chargé. Si le son n'est pas coupé, ne pas montrer la vidéo:
 
 ```css
 video[autoplay]:not([muted]) {
@@ -472,9 +472,9 @@ Encore une fois, nous prenons avantage d'utiliser le [`:not()`](#use-not-to-appl
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Utiliser `:root` de type flexible
+### Utiliser `:root` pour type flexible
 
-La taille type de police dans une disposition sensible devrait être en mesure d'ajuster à chaque fenêtre. Vous pouvez calculer la taille de la police basée sur la hauteur de la fenêtre et la largeur en utilisant `: root`:
+La taille type de police dans une disposition sensible devrait être en mesure d'ajuster chaque fenêtre. Vous pouvez calculer la taille de la police basée sur la hauteur de la fenêtre et la largeur en utilisant `: root`:
 
 ```css
 :root {
@@ -495,9 +495,9 @@ body {
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Réglez `font-size` sur le formulaire éléments pour une expérience mobile mieux
+### Réglez `font-size` sur des éléments de formulaire pour une meilleure expérience mobile 
 
-Pour éviter les navigateurs mobiles (iOS Safari, _et al_.) De zoom sur des éléments de formulaire HTML quand un `<select>` déroulante est taraudé, ajoutez `font-size` à la règle de sélection:
+Pour éviter les navigateurs mobiles (iOS Safari, _et al_.) De zoomer sur des éléments de formulaire HTML quand un `<select>` déroulant est touché, ajoutez `font-size` à la règle de sélection:
 
 ```css
 input[type="text"],
