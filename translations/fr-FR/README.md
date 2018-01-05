@@ -22,28 +22,28 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 1. [Hériter `box-sizing`](#hériter-box-sizing)
 1. [Utiliser `:not()` postuler / unapply Borders Navigation](#utiliser-not-postuler--unapply-frontières-sur-la-navigation)
 1. [Ajouter `line-height` à `body`](#ajouter-line-height-à-body)
-1. [Verticalement-Center Tout](#verticalement-center-tout)
-1. [Listes Comma-Separated Values](#listes-séparées-par-des-virgules)
+1. [Tout-Centrer Verticalement](#verticalement-center-tout)
+1. [Listes séparées par des virgules](#listes-séparées-par-des-virgules)
 1. [Sélectionner éléments à l'aide négative `nth-child`](#sélectionnez-éléments-à-laide-négative-nth-child)
-1. [Utiliser SVG pour Icons](#utiliser-svg-pour-icons)
+1. [Utiliser SVG pour des Icones](#utiliser-svg-pour-icons)
 1. [Utilisez le sélecteur "lobotomisé Owl"](#utilisez-le-sélecteur-lobotomisé-owl)
-1. [Utilisez `max-height` pour Sliders CSS pur](#utilisez-max-height-pour-sliders-css-pur)
-1. [Cellules Equal Largeur de table](#cellules-equal-largeur-de-table)
-1. [Se débarrasser de la marge Hacks Avec Flexbox](#se-débarrasser-de-la-marge-hacks-avec-flexbox)
+1. [Utilisez `max-height` pour des Sliders pur CSS](#utilisez-max-height-pour-sliders-css-pur)
+1. [Celles de Tables de Même Largeur](#cellules-equal-largeur-de-table)
+1. [Se débarrasser des Marges Avec Flexbox](#se-débarrasser-de-la-marge-hacks-avec-flexbox)
 1. [Utilisation des attributs sélecteurs avec des liens vides](#utilisation-des-attributs-sélecteurs-avec-des-liens-vides)
 1. [Style "par défaut" Liens](#style-par-défaut-liens)
 1. [Conformément Vertical Rhythm](#conformément-vertical-rhythm)
 1. [Boîtes Ratio Intrinsic](#boîtes-ratio-intrinsic)
-1. [Style de Broken Images](#style-de-broken-images)
+1. [Style des Images Cassées](#style-de-broken-images)
 1. [Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing](#utilisez-rem-for-global-dimensionnement-utilisez-em-pour-local-sizing)
 1. [Masquer les vidéos Autoplay qui ne sont pas Muted](#masquer-les-vidéos-autoplay-qui-ne-sont-pas-muted)
-1. [Utiliser `:root` de type flexible](#utiliser-root-de-type-flexible)
-1. [Réglez `font-size` sur le formulaire éléments pour une expérience mobile mieux](#réglez-font-size-sur-le-formulaire-éléments-pour-une-expérience-mobile-mieux)
+1. [Utiliser `:root` pour Type flexible](#utiliser-root-de-type-flexible)
+1. [Réglez `font-size` sur des éléments de formulaire pour une expérience mobile mieux](#réglez-font-size-sur-le-formulaire-éléments-pour-une-expérience-mobile-mieux)
 
 
 ### Utilisez un Reset CSS
 
-Réinitialise CSS aider à faire respecter la cohérence de style entre les différents navigateurs avec une ardoise propre pour les éléments de style. Vous pouvez utiliser la bibliothèque de réinitialisation CSS comme [Normalize](http://necolas.github.io/normalize.css/), et al, ou vous pouvez utiliser une approche de réinitialisation plus simplifiée:
+Réinitialiser un CSS aider à faire respecter la cohérence de style entre les différents navigateurs avec une ardoise propre pour les éléments de style. Vous pouvez utiliser la bibliothèque de réinitialisation CSS comme [Normalize](http://necolas.github.io/normalize.css/), et al, ou vous pouvez utiliser une approche de réinitialisation plus simplifiée:
 
 ```css
 * {
@@ -57,7 +57,7 @@ Maintenant, les éléments seront dépouillés des marges et le rembourrage, et 
 
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
-**Remarque:** Si vous suivez la pointe [Hériter `box-sizing`](#inherit-box-sizing) ci-dessous vous pouvez choisir de ne pas inclure la propriété box-sizing dans votre reset CSS.
+**Remarque:** Si vous suivez la pointe [Inherit `box-sizing`](#inherit-box-sizing) ci-dessous vous pouvez choisir de ne pas inclure la propriété box-sizing dans votre reset CSS.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
@@ -82,9 +82,9 @@ Cela rend plus facile de changer `box-sizing` dans les plugins ou autres composa
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Utiliser `:not()` postuler / unapply frontières sur la navigation
+### Utiliser `:not()` Appliquer / Retirer les bordures sur la navigation
 
-Au lieu de mettre à la frontière...
+Au lieu de le mettre aux bordures...
 
 ```css
 /* add border */
@@ -93,7 +93,7 @@ Au lieu de mettre à la frontière...
 }
 ```
 
-...and then taking it off the last element...
+...et ensuite de le retirer du dernier élément...
 
 ```css
 /* remove border */
@@ -110,7 +110,7 @@ Au lieu de mettre à la frontière...
 }
 ```
 
-Bien sûr, vous pouvez utiliser `.nav li + li` ou même `.nav li:first-child ~ li`, mais avec `:not()` l'intention est très claire et le sélecteur CSS définit la frontière comme un être humain serait le décrire.
+Bien sûr, vous pouvez utiliser `.nav li + li` ou même `.nav li:first-child ~ li`, mais avec `:not()` l'intention est très claire et le sélecteur CSS définit la bordure comme un être humain serait le décrire.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
@@ -119,7 +119,7 @@ Bien sûr, vous pouvez utiliser `.nav li + li` ou même `.nav li:first-child ~ l
 
 ### Ajouter `line-height` à `body`
 
-Vous ne devez pas ajouter `line-height` à chaque `<p>`, `<h*>`, _et al_. séparément. Au lieu de cela, ajoutez-le à `body`:
+Vous n'avez pas à ajouter `line-height` à chaque `<p>`, `<h*>`, _et al_. séparément. Au lieu de cela, ajoutez-le à `body`:
 
 ```css
 body {
@@ -134,9 +134,9 @@ De cette façon, les éléments textuels peuvent hériter de `body` facilement.
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Verticalement-Center Tout
+### Tout-Centrer Verticalement
 
-Non, ce n'est pas de la magie noire, vous ne pouvez vraiment centrer des éléments verticalement:
+Non, ce n'est pas de la magie noire, vous pouvez vraiment centrer des éléments verticalement:
 
 ```css
 html, body {
@@ -153,9 +153,9 @@ body {
 }
 ```
 
-Vous voulez centrer autre chose? Verticalement, horizontalement...quoi que ce soit, à tout moment, en tout lieu? CSS-Tricks a [une belle écriture-up](https://css-tricks.com/centering-css-complete-guide/) à faire tout cela.
+Vous voulez centrer autre chose? Verticalement, horizontalement...quoi que ce soit, à tout moment, en tout lieu? CSS-Tricks a [une belle rédaction](https://css-tricks.com/centering-css-complete-guide/) montrant tout cela.
 
-**Remarque:** Surveillez certains [poussette behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) avec flexBox dans IE11.
+**Remarque:** Surveillez certains [comportement problématiques](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) avec flexBox dans IE11.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -164,7 +164,7 @@ Vous voulez centrer autre chose? Verticalement, horizontalement...quoi que ce so
 
 ### Listes séparées par des virgules
 
-Faire la liste des articles ressemblent à une vraie liste, séparées par des virgules:
+Faire la liste des articles ressemblant à une vraie liste, séparées par des virgules:
 
 ```css
 ul > li:not(:last-child)::after {
@@ -172,9 +172,9 @@ ul > li:not(:last-child)::after {
 }
 ```
 
-Utilisez le `:not()` pseudo-classe donc pas une virgule est ajoutée au dernier point.
+Utilisez le `:not()` pseudo-classe pour qu'aucune virgule ne soit ajoutée au dernier élément.
 
-**Remarque:** Cette astuce peut ne pas être idéal pour l'accessibilité, l'écran spécifiquement lecteurs. Et copier / coller à partir du navigateur ne fonctionne pas avec le contenu généré par CSS. Procéder avec prudence.
+**Remarque:** Cette astuce peut ne pas être idéale pour l'accessibilité, spécifiquement pour les lecteurs sur écran. Et copier / coller à partir du navigateur ne fonctionne pas avec le contenu généré par CSS. Procéder avec prudence.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
@@ -220,7 +220,7 @@ Il n'y a aucune raison de ne pas utiliser SVG pour les icônes:
 }
 ```
 
-SVG échelles bien pour tous les types de résolution et est pris en charge dans tous les navigateurs [retour au IE9](http://caniuse.com/#search=svg). Donc fossé vos fichiers .png, .jpg ou .gif-JIF-whatev.
+SVG se redimentionne bien pour tous les types de résolution et est pris en charge dans tous les navigateurs [retour au IE9](http://caniuse.com/#search=svg). Donc fossé vos fichiers .png, .jpg ou .gif-JIF-whatev.
 
 **Remarque:** Si vous avez SVG icon-seulement des boutons pour les utilisateurs voyants et le SVG ne parvient pas à charger, cela vous aidera à maintenir l'accessibilité:
 
