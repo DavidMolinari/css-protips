@@ -20,7 +20,7 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 
 1. [Utilisez un Reset CSS](#utilisez-un-reset-css)
 1. [Hériter `box-sizing`](#hériter-box-sizing)
-1. [Utiliser `:not()` postuler / unapply Borders Navigation](#utiliser-not-postuler--unapply-frontières-sur-la-navigation)
+1. [Utiliser `:not()` Appliquer / Retirer les bordures sur la navigation](#utiliser-not-postuler--unapply-frontières-sur-la-navigation)
 1. [Ajouter `line-height` à `body`](#ajouter-line-height-à-body)
 1. [Tout-Centrer Verticalement](#verticalement-center-tout)
 1. [Listes séparées par des virgules](#listes-séparées-par-des-virgules)
